@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+      
+   /* background-image: linear-gradient( 179.7deg,  rgba(249,21,215,1) 1.1%, rgba(22,0,98,1) 99% );*/  
+   background-color: rgb(7, 15, 43);
+   color: #cdcdcd;
+   width: inherit;
+   height: 100%;
+   font-family: "Sedan SC", serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+.navbar{
+    width: inherit;
+    height: inherit;
+}
+
+nav{
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    color: #cdcdcd;
+    background-color: rgba(7, 15, 43, 0.629);
+    border-bottom: 1px solid rgb(18, 28, 63);
+    z-index: 100;
+    }
+
+
+    .left-nav{
+        height: 100%;
+        width: 50%;
+        z-index: 10;
+    }
+
+    .left-nav img{
+        z-index: 10;
+    }
+
+     
+      .right-nav{
+        height: 100%;
+         right: 0;
+         width: 50%;
+      } 
+
+    .right-nav ul{
+        display: flex;
+        gap: 1vw;
+        list-style: none;
+        list-style-type: none;
+        color: #cdcdcd;
+        justify-content: right;
+        margin-right: 4vw;
+    }
+
+    .rigth-nav ul li{
+        list-style: none;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .right-nav ul li a{
+        color: #cdcdcd;
+        font-weight: bold;
+        font-size: large;
+    }
+
+    a:link { 
+        text-decoration: none; 
+      } 
+      a:visited { 
+        text-decoration: none; 
+      } 
+      a:hover { 
+        text-decoration: none; 
+      } 
+      a:active { 
+        text-decoration: none; 
+      }
+
+      .navbar{
+        width: inherit;
+        height: inherit;
+      }
+ 
+
+      /*main*/
+
+              .main-one main{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 14vh;
+                align-items: center;
+                z-index: 0;
+              }
+
+      .left-main{
+            width: 50%;
+            margin-left: 5vw;
+            position: relative;
+            gap: 3vh;
+            padding: 13px 13px;
+        
+
+            &::before{
+                position: absolute;
+                content: "";
+                aspect-ratio: 1;
+               top: 0.7vh;
+                left: -0.3rem;
+                height: 100%;
+                width: 0.5%;
+                background-image: linear-gradient(35deg, rgb(126, 208, 255) 0%, rgb(155, 81, 224) 100%);
+                border-radius: 12px;
+            }
+
+      }
+                .left-main h1{
+                    margin-top: 1vh;
+                    font-family: "Sedan SC", serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    margin-bottom: 1vh;
+                }
+
+                   .left-main h2{
+                      color: red;
+                      font-family: "Sedan SC", serif;
+                      font-weight: 400;
+                      font-style: normal;
+                   }
+
+       .right-main{
+        width: 50%;
+        margin-left: 12vw;
+      } 
+
+      .right-main img{
+        animation: jump 2.8s linear infinite alternate-reverse;
+      }
+     
+      @keyframes jump{
+         100%{
+            transform: translateY(9vh);
+         }
+      }
+
+      /*main 2*/
+
+      form{
+        display: flex;
+        flex-direction: row;
+         width: 50vw;
+        
+      }
+
+      .main-two main{
+          display: flex;
+          flex-direction: column;
+          gap: 18vh;
+          margin-top: 15vh;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .main-two main form img{
+        border: 2px;
+        border-radius: 16px;
+      }
+
+      .card{
+        display:flex;   
+        background-color: rgb(7, 15, 43);
+       gap: 6vw;
+       border: 2px solid rgb(7, 15, 43);
+       border-radius: 12px;
+       padding: 12px;
+       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       width: 45vw;
+       justify-content: center;
+       align-items: center;
+       font-family: "Sedan SC", serif;
+       font-weight: 600;
+       font-style: normal;
+       grid-column: span 2;
+      }
+
+      .main-2-content{
+           margin-top: 17vh;
+           display: flex;
+           flex-direction: column;
+           gap: 1vh;
+      }
+ 
+      .main-2-content h1{
+        color: #cdcdcd;
+      }
+
+       
+   
+        input{
+        background-image: linear-gradient(35deg, rgb(126, 208, 255) 0%, rgb(155, 81, 224) 100%);
+        color: black;
+        padding: 9px 9px;
+        border: 2px ;
+        border-radius: 12px;
+        width: 8vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Sedan SC", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      input:hover{
+        opacity: 0.6;
+      }
+      
+
+/* footer*/
+
+footer{
+    display: flex;
+    background-color: black;
+    color: #cdcdcd;
+    width: inherit;
+    height: 35vh;
+    padding: 26px 26px;
+    margin-top: 40vh;
+    justify-content: center;
+    align-items: center;
+    line-height: 20vh;
+    border: 2px solid black;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+    
